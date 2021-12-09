@@ -29,6 +29,7 @@ var (
 		"subject",
 		"brand",
 		"ext",
+		"f",
 	}
 )
 
@@ -40,7 +41,7 @@ func ShardUtil() {
 		shard         = args[shardNameKey].(string)
 		pagesAmount   = args[shardsAmountKey].(int)
 		pagesItems    = make(map[string]map[string]map[string]struct{})
-		arrangedItems = make(map[string]map[string]map[string]struct{}) //ext и brand потребуют доп перераспределения
+		arrangedItems = make(map[string]map[string]map[string]map[string]struct{}) //ext и brand потребуют доп перераспределения
 	)
 
 	if err != nil {
@@ -48,56 +49,136 @@ func ShardUtil() {
 		os.Exit(1)
 	}
 
+	of, err := os.Create("of.txt")
+	defer of.Close()
+
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
+		os.Exit(1)
+	}
+
 	for i := 1; i <= pagesAmount; i++ {
-		content, err := getPageData(
-			fmt.Sprintf("%s%s%d", shardsPageTemplate,
-				shard,
-				i))
+		url := fmt.Sprintf("%s%s%d", shardsPageTemplate,
+			shard,
+			i)
+		content, err := getPageData(url)
+
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
 			os.Exit(1)
 		}
 		shardNameNumeric := fmt.Sprintf("%s%d", shard, i)
 		pagesItems[shardNameNumeric] =
-			getDataFromQuery(content, defaultDataKeys[0:1], defaultDelimiter)
-		arrangedItems[shardNameNumeric] = make(map[string]map[string]struct{})
+			getDataFromQuery(content, []string{"subjects", "exts"}, ",")
+
 	}
 
+	os.Open("of.txt")
+
+	addedSubjects := make(map[string]struct{})
+	queryResult := make([][]string, 0)
+
 	for _, query := range queries {
+		queryString := strings.Join(query, "|")
+		arrangedItems[queryString] = map[string]map[string]map[string]struct{}{}
 		data := getDataFromQuery(query[8], defaultDataKeys, defaultDelimiter)
 		for shardNameNumeric, items := range pagesItems {
 			for subject := range data[defaultDataKeys[0]] {
-				fmt.Println(subject)
-				if _, in := items[defaultDataKeys[0]][subject]; !in {
-					if _, ok := arrangedItems[shardNameNumeric][defaultDataKeys[0]]; !ok {
-						arrangedItems[shardNameNumeric][defaultDataKeys[0]] = make(map[string]struct{})
+				if _, in := items["subjects"][subject]; in {
+					if _, added := arrangedItems[queryString][shardNameNumeric]; !added {
+						arrangedItems[queryString][shardNameNumeric] = make(map[string]map[string]struct{})
 					}
-					arrangedItems[shardNameNumeric][defaultDataKeys[0]][subject] = struct{}{}
+					if _, ok := arrangedItems[queryString][shardNameNumeric][defaultDataKeys[0]]; !ok {
+						arrangedItems[queryString][shardNameNumeric][defaultDataKeys[0]] = make(map[string]struct{})
+					}
+					if _, in := arrangedItems[queryString][shardNameNumeric][defaultDataKeys[0]][subject]; !in {
+						if _, added := addedSubjects[subject]; !added {
+							arrangedItems[queryString][shardNameNumeric][defaultDataKeys[0]][subject] = struct{}{}
+							addedSubjects[subject] = struct{}{}
+							delete(data[defaultDataKeys[0]], subject)
+						}
+					}
 				}
 			}
-			changeQuery(query, arrangedItems)
 		}
+		addedSubjects = make(map[string]struct{})
+		changedQuery := changeQuery(query, arrangedItems[queryString])
 
+		if len(data[defaultDataKeys[0]]) == 0 && changedQuery != "Must be elastic" {
+			queryResult = append(queryResult, []string{queryString, changedQuery})
+		}
+		of.WriteString(fmt.Sprintf("Query: %s\nResult: %s\n\n", queryString, changeQuery(query, arrangedItems[queryString])))
 	}
-
-	//arrangedData, err = arrangeDataAcrossPages(shard, data, shardPages)
+	err = changeFileStrings(args[pathToFileKey].(string), queryResult)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
+		os.Exit(1)
+	}
 }
 
-//"https://wbxcatalog-ru.wildberries.ru/electronic1/catalog?subject=520;593;790;1407;3152"
-func changeQuery(query []string, arrangedItems map[string]map[string]map[string]struct{}) {
-	changedQuery := "-one-by-one-join"
-	query[5] = "catalog"
+func changeFileStrings(f string, s [][]string) error {
+	var (
+		input, err = ioutil.ReadFile(f)
+	)
+
+	if err != nil {
+		return err
+	}
+	lines := strings.Split(string(input), "\n")
+	j := 0
+	for i, line := range lines {
+		if strings.TrimSpace(line) == strings.TrimSpace(s[j][0]) {
+			lines[i] = strings.TrimSpace(s[j][1])
+			j++
+			if j == len(s) {
+				break
+			}
+		}
+	}
+	fmt.Println("Заменено", j)
+	output := strings.Join(lines, "\n")
+	err = ioutil.WriteFile("_"+f, []byte(output), 0644)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func changeQuery(query []string, arrangedItems map[string]map[string]map[string]struct{}) string {
+	changedQuery := "--one-by-one-join"
+	lastKey := ""
+	subjects := ""
 	for k, v := range arrangedItems {
-		subjects := ""
-		for k1, _ := range v[defaultDataKeys[0]] {
+		lastKey = k
+		for k1 := range v[defaultDataKeys[0]] {
 			subjects += k1 + ";"
 		}
-		fmt.Println(subjects)
-		subjects = subjects[:len(subjects)-1]
-		changedQuery += fmt.Sprintf(" \"https://wbxcatalog-ru.wildberries.ru/%s/catalog?subject=%s\" ", k, subjects)
+		if len(subjects) == 0 {
+			continue
+		} else if subjects[len(subjects)-1] == ';' {
+			subjects = subjects[0 : len(subjects)-1]
+		}
+		changedQuery += fmt.Sprintf(" \"https://wbxcatalog-ru.wildberries.ru/%s/catalog?subject=%s\"", k, subjects)
+		subjects = ""
 	}
-	query[6] = changedQuery
-	fmt.Println(strings.Join(query, "|"))
+	res := ""
+	if len(arrangedItems) == 1 {
+		query[7] = lastKey
+	} else if len(arrangedItems) == 0 || strings.Contains(query[8], "ext") {
+		return "Must be elastic"
+	} else {
+		query[5] = "catalog" //
+		query[6] = changedQuery
+		query[7] = "preset/bucketX"
+		if len(query[1]) != 0 {
+			query[8] = "preset=" + query[1]
+		} else {
+			query[8] = "preset=x"
+		}
+		res += "\n"
+	}
+	res += strings.Join(query, "|")
+	return res
 }
 
 func getPageData(page string) (string, error) {
