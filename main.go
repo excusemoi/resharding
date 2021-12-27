@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"io/ioutil"
@@ -21,6 +22,7 @@ const (
 	shardNameKey       = "shardName"
 	filterKey          = "ext"
 	defaultDelimiter   = ";"
+	bucketKey          = "bucket"
 	shardsPageTemplate = "http://catalog-master-menu.wbx-ru.svc.k8s.dataline/newshard?name="
 )
 
@@ -29,17 +31,22 @@ var (
 		"subject",
 		"brand",
 		"ext",
+		"kind",
 		"f",
 	}
+	fullLink = "http://catalog-master-menu.wbx-ru.svc.k8s.dataline/menu/full"
+	log, _   = os.Create("log.txt")
 )
+
+type shardStruct struct {
+	Shard string `json:"shard"`
+}
 
 func ShardUtil() {
 
 	var (
 		args          = parseShardUtilCommandArgs()
 		queries, err  = getShardQueriesFromCsv(args[pathToFileKey].(string), args[shardNameKey].(string))
-		shard         = args[shardNameKey].(string)
-		pagesAmount   = args[shardsAmountKey].(int)
 		pagesItems    = make(map[string]map[string]map[string]struct{})
 		arrangedItems = make(map[string]map[string]map[string]map[string]struct{}) //ext и brand потребуют доп перераспределения
 	)
@@ -49,31 +56,28 @@ func ShardUtil() {
 		os.Exit(1)
 	}
 
-	of, err := os.Create("of.txt")
-	defer of.Close()
+	allShards, err := getAllShards()
 
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
 		os.Exit(1)
 	}
 
-	for i := 1; i <= pagesAmount; i++ {
-		url := fmt.Sprintf("%s%s%d", shardsPageTemplate,
-			shard,
-			i)
+	for k := range allShards {
+		url := fmt.Sprintf("%s%s", shardsPageTemplate, //
+			k)
 		content, err := getPageData(url)
 
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
 			os.Exit(1)
 		}
-		shardNameNumeric := fmt.Sprintf("%s%d", shard, i)
+
+		shardNameNumeric := k
 		pagesItems[shardNameNumeric] =
 			getDataFromQuery(content, []string{"subjects", "exts"}, ",")
 
 	}
-
-	os.Open("of.txt")
 
 	addedSubjects := make(map[string]struct{})
 	queryResult := make([][]string, 0)
@@ -102,18 +106,38 @@ func ShardUtil() {
 			}
 		}
 		addedSubjects = make(map[string]struct{})
-		changedQuery := changeQuery(query, arrangedItems[queryString])
+		changedQuery := changeQuery(query,
+			arrangedItems[queryString],
+			len(arrangedItems[queryString]) == 0 ||
+				strings.Contains(query[8], "ext") ||
+				len(data[defaultDataKeys[0]]) != 0)
 
-		if len(data[defaultDataKeys[0]]) == 0 && changedQuery != "Must be elastic" {
-			queryResult = append(queryResult, []string{queryString, changedQuery})
-		}
-		of.WriteString(fmt.Sprintf("Query: %s\nResult: %s\n\n", queryString, changeQuery(query, arrangedItems[queryString])))
+		queryResult = append(queryResult, []string{queryString, changedQuery})
+		log.WriteString(fmt.Sprintf("Query: %s\nResult: %s\n\n", queryString, changedQuery))
 	}
 	err = changeFileStrings(args[pathToFileKey].(string), queryResult)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
 		os.Exit(1)
 	}
+}
+
+func getAllShards() (map[string]struct{}, error) {
+	content, err := getPageData(fullLink)
+	if err != nil {
+		return nil, err
+	}
+	r := regexp.MustCompile(`"shard":"[^,]+"`)
+	res := make(map[string]struct{})
+	shards := r.FindAllString(content, -1)
+	for _, str := range shards {
+		s := shardStruct{}
+		str = "{" + str + "}"
+		_ = json.Unmarshal([]byte(str), &s)
+		res[s.Shard] = struct{}{}
+	}
+
+	return res, nil
 }
 
 func changeFileStrings(f string, s [][]string) error {
@@ -124,6 +148,7 @@ func changeFileStrings(f string, s [][]string) error {
 	if err != nil {
 		return err
 	}
+
 	lines := strings.Split(string(input), "\n")
 	j := 0
 	for i, line := range lines {
@@ -136,6 +161,7 @@ func changeFileStrings(f string, s [][]string) error {
 		}
 	}
 	fmt.Println("Заменено", j)
+
 	output := strings.Join(lines, "\n")
 	err = ioutil.WriteFile("_"+f, []byte(output), 0644)
 	if err != nil {
@@ -144,10 +170,11 @@ func changeFileStrings(f string, s [][]string) error {
 	return nil
 }
 
-func changeQuery(query []string, arrangedItems map[string]map[string]map[string]struct{}) string {
+func changeQuery(query []string, arrangedItems map[string]map[string]map[string]struct{}, elastic bool) string {
 	changedQuery := "--one-by-one-join"
 	lastKey := ""
 	subjects := ""
+	data := getDataFromQuery(query[8], defaultDataKeys, defaultDelimiter)
 	for k, v := range arrangedItems {
 		lastKey = k
 		for k1 := range v[defaultDataKeys[0]] {
@@ -164,16 +191,36 @@ func changeQuery(query []string, arrangedItems map[string]map[string]map[string]
 	res := ""
 	if len(arrangedItems) == 1 {
 		query[7] = lastKey
-	} else if len(arrangedItems) == 0 || strings.Contains(query[8], "ext") {
-		return "Must be elastic"
 	} else {
-		query[5] = "catalog" //
-		query[6] = changedQuery
-		query[7] = "preset/bucketX"
+		if elastic {
+			query[5] = "elasticsearch"
+			query[6] = "--query="
+			req := strings.Replace(query[0], "(", "", -1)
+			req = strings.Replace(req, ")", "", -1)
+			req = strings.Join(strings.Split(req, " "), " ")
+			query[6] += "\"" + req + "\" "
+			query[6] += "--max-product=15000 "
+			query[6] += `--filter="subjectId:(`
+			for s := range data[defaultDataKeys[0]] {
+				query[6] += s + " OR "
+			}
+			query[6] = query[6][:len(query[6])-4]
+			query[6] += ")\""
+		} else {
+			query[5] = "catalog" //
+			query[6] = changedQuery
+		}
+		query[7] = "preset/bucket_17" //bucket захардкожен
 		if len(query[1]) != 0 {
 			query[8] = "preset=" + query[1]
 		} else {
-			query[8] = "preset=x"
+			query[8] = "preset=x" //preset не автоматизирован
+		}
+		if len(data["kind"]) != 0 {
+			for k := range data["kind"] {
+				query[8] += k + ";"
+			}
+			query[8] = query[8][:len(query[8])-1]
 		}
 		res += "\n"
 	}
@@ -200,15 +247,15 @@ func getPageData(page string) (string, error) {
 
 func parseShardUtilCommandArgs() CommandLineArgs {
 	var (
-		pathToCsv    = flag.String("p", ".", "path to csv file with queries")
-		shardsAmount = flag.Int("n", 6, "amount of shards pages")
-		shardName    = flag.String("s", "", "name of shard")
-		args         = make(map[string]interface{})
+		pathToCsv = flag.String("p", ".", "path to csv file with queries")
+		shardName = flag.String("s", "", "name of shard")
+		bucket    = flag.String("b", "17", "bucket number")
+		args      = make(map[string]interface{})
 	)
 	flag.Parse()
 	args[pathToFileKey] = *pathToCsv
-	args[shardsAmountKey] = *shardsAmount
 	args[shardNameKey] = *shardName
+	args[bucketKey] = *bucket
 	return args
 }
 
