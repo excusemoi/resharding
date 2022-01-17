@@ -1,0 +1,60 @@
+Query: (контейнеры) (для еды)||yes|common||||kitchen|subject=1807;1806;820;2841|()
+Result: (контейнеры) (для еды)||yes|common||||kitchen1|subject=1807;1806;820;2841|()
+
+Query: (контейнер) (для овощей)||no|common||||kitchen|subject=1806&f58813=417166|()
+Result: (контейнер) (для овощей)||no|common||||kitchen1|subject=1806&f58813=417166|()
+
+Query: (для запекания)||yes|common||||kitchen|subject=1841;2554;813|()
+Result: 
+(для запекания)||yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/kitchen1/catalog?subject=2554;813" "https://wbxcatalog-ru.wildberries.ru/kitchen_root/catalog?subject=1841"|presets/bucket_17|preset=x|()
+
+Query: (нож) (для фигурной) (нарезки)||yes|common||||kitchen|subject=2285|()
+Result: (нож) (для фигурной) (нарезки)||yes|common||||kitchen4|subject=2285|()
+
+Query: (фартуки)|10022734|yes|common||menu_item||kitchen|subject=402|(дом)
+Result: (фартуки)|10022734|yes|common||menu_item||gift2|subject=402|()
+
+Query: (фольга) (пищевая)|10028266|yes|common||menu_item||kitchen|subject=2435;1590|(посуда и инвентарь)
+Result: 
+(фольга) (пищевая)|10028266|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/kitchen1/catalog?subject=2435" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=1590"|presets/bucket_17|preset=10028266|()
+
+Query: (кухонные) (доски)||yes|common||||kitchen|subject=824|()
+Result: (кухонные) (доски)||yes|common||||gift4|subject=824|()
+
+Query: (сервировка) (стола)|10033522|yes|common||menu_item||kitchen|subject=199;816;828;831;877;1041;1350;1832;2354;2681;2749;2750;2751;2866;3104|()
+Result: 
+(сервировка) (стола)|10033522|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/kitchen_root/catalog?subject=1041;828;199" "https://wbxcatalog-ru.wildberries.ru/kitchen2/catalog?subject=877;3104" "https://wbxcatalog-ru.wildberries.ru/gift3/catalog?subject=2749" "https://wbxcatalog-ru.wildberries.ru/creativity/catalog?subject=2866" "https://wbxcatalog-ru.wildberries.ru/kitchen4/catalog?subject=2681;1832;2751;1350;816;831;2750;2354"|presets/bucket_17|preset=10033522|()
+
+Query: (полотенца) (для кухни)||yes|common||||kitchen|subject=1626|()
+Result: (полотенца) (для кухни)||yes|common||||gift4|subject=1626|()
+
+Query: (полотенце) (для кухни)||yes|common||||kitchen|subject=1626|()
+Result: (полотенце) (для кухни)||yes|common||||newyear_things2|subject=1626|()
+
+Query: (мешки) (кондитерские)|10084406|yes|common||menu_item||kitchen|subject=1775|()
+Result: (мешки) (кондитерские)|10084406|yes|common||menu_item||kitchen1|subject=1775|()
+
+Query: (чайники) (заварочные)|10089428|yes|common||content_item||kitchen|subject=2144|()
+Result: (чайники) (заварочные)|10089428|yes|common||content_item||gift4|subject=2144|()
+
+Query: (декорирование десертов)|20001521|yes|common||menu_item||kitchen|subject=1775;1776;1802;1812;2877;3747;3752;3753;4649;4650|()
+Result: (декорирование десертов)|20001521|yes|common||menu_item||kitchen1|subject=1775;1776;1802;1812;2877;3747;3752;3753;4649;4650|()
+
+Query: (чайники для кипячения)|20001530|yes|common||menu_item||kitchen|subject=839|()
+Result: (чайники для кипячения)|20001530|yes|common||menu_item||gift4|subject=839|()
+
+Query: (камни для виски)||yes|common||||kitchen|subject=1371|()
+Result: (камни для виски)||yes|common||||gift2|subject=1371|()
+
+Query: (пипетка для кухни)||yes|common||||kitchen|subject=5313|()
+Result: (пипетка для кухни)||yes|common||||kitchen1|subject=5313|()
+
+Query: (полотенце) (для кухни)||yes|common||||kitchen|subject=1626|()
+Result: (полотенце) (для кухни)||yes|common||||gift3|subject=1626|()
+
+Query: (стойка для вина)||yes|common||||kitchen|subject=1476|()
+Result: (стойка для вина)||yes|common||||gift3|subject=1476|()
+
+Query: (стойка под вино)||yes|common||||kitchen|subject=1476|()
+Result: (стойка под вино)||yes|common||||kitchen4|subject=1476|()
+

@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"os/exec"
 	"regexp"
 	"strings"
 	"time"
@@ -35,7 +36,6 @@ var (
 		"f",
 	}
 	fullLink = "http://catalog-master-menu.wbx-ru.svc.k8s.dataline/menu/full"
-	log, _   = os.Create("log.txt")
 )
 
 type shardStruct struct {
@@ -48,8 +48,10 @@ func ShardUtil() {
 		args          = parseShardUtilCommandArgs()
 		queries, err  = getShardQueriesFromCsv(args[pathToFileKey].(string), args[shardNameKey].(string))
 		pagesItems    = make(map[string]map[string]map[string]struct{})
-		arrangedItems = make(map[string]map[string]map[string]map[string]struct{}) //ext и brand потребуют доп перераспределения
+		arrangedItems = make(map[string]map[string]map[string]map[string]struct{})
 	)
+
+	log, _ := os.Open(fmt.Sprintf("log%s.txt", args[shardNameKey].(string)))
 
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
@@ -57,12 +59,19 @@ func ShardUtil() {
 	}
 
 	allShards, err := getAllShards()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
+		os.Exit(1)
+	}
+
+	//pagesItems, err = getAllFullSubjects(allShards)
 
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "ShardUtil: %s ", err.Error())
 		os.Exit(1)
 	}
 
+	//getting content from shards urls
 	for k := range allShards {
 		url := fmt.Sprintf("%s%s", shardsPageTemplate, //
 			k)
@@ -97,6 +106,7 @@ func ShardUtil() {
 					}
 					if _, in := arrangedItems[queryString][shardNameNumeric][defaultDataKeys[0]][subject]; !in {
 						if _, added := addedSubjects[subject]; !added {
+							//fmt.Println(subject)
 							arrangedItems[queryString][shardNameNumeric][defaultDataKeys[0]][subject] = struct{}{}
 							addedSubjects[subject] = struct{}{}
 							delete(data[defaultDataKeys[0]], subject)
@@ -122,6 +132,38 @@ func ShardUtil() {
 	}
 }
 
+func getAllFullSubjects(shards map[string]struct{}) (map[string]map[string]map[string]struct{}, error) {
+	pagesItems := make(map[string]map[string]map[string]struct{})
+	for shard := range shards {
+		res, err := exec.Command("bash", "hand.sh", shard).Output()
+		if err != nil {
+			return nil, err
+		}
+		fs := fullSubjects{}
+		err = json.Unmarshal(res, &fs)
+		if err != nil {
+			if len(res) <= 1 {
+				continue
+			}
+			return nil, err
+		}
+		pagesItems[shard] = make(map[string]map[string]struct{})
+		pagesItems[shard][defaultDataKeys[0]] = make(map[string]struct{})
+		for _, s := range fs.FullSubjects {
+			pagesItems[shard][defaultDataKeys[0]][fmt.Sprintf("%d", s)] = struct{}{}
+		}
+	}
+	return pagesItems, nil
+}
+
+func getNumericShards(shardName string, amount int) map[string]struct{} {
+	numericShards := make(map[string]struct{})
+	for i := 1; i <= amount; i++ {
+		numericShards[fmt.Sprintf("%s%d", shardName, i)] = struct{}{}
+	}
+	return numericShards
+}
+
 func getAllShards() (map[string]struct{}, error) {
 	content, err := getPageData(fullLink)
 	if err != nil {
@@ -136,7 +178,6 @@ func getAllShards() (map[string]struct{}, error) {
 		_ = json.Unmarshal([]byte(str), &s)
 		res[s.Shard] = struct{}{}
 	}
-
 	return res, nil
 }
 
@@ -163,7 +204,7 @@ func changeFileStrings(f string, s [][]string) error {
 	fmt.Println("Заменено", j)
 
 	output := strings.Join(lines, "\n")
-	err = ioutil.WriteFile("_"+f, []byte(output), 0644)
+	err = ioutil.WriteFile(f, []byte(output), 0644)
 	if err != nil {
 		return err
 	}
@@ -210,7 +251,7 @@ func changeQuery(query []string, arrangedItems map[string]map[string]map[string]
 			query[5] = "catalog" //
 			query[6] = changedQuery
 		}
-		query[7] = "preset/bucket_17" //bucket захардкожен
+		query[7] = "presets/bucket_17" //bucket захардкожен
 		if len(query[1]) != 0 {
 			query[8] = "preset=" + query[1]
 		} else {
@@ -224,6 +265,7 @@ func changeQuery(query []string, arrangedItems map[string]map[string]map[string]
 		}
 		res += "\n"
 	}
+	query[9] = "()"
 	res += strings.Join(query, "|")
 	return res
 }
@@ -322,6 +364,21 @@ func getDataFromQuery(query string, dataKeys []string, delimiter string) map[str
 		}
 	}
 	return data
+}
+
+type fullSubjects struct {
+	FullSubjects []int `json:"fullsubjects"`
+}
+
+func test() {
+	s, _ := getAllShards()
+	for k := range s {
+		_, err := exec.Command("bash", "hand.sh", k).Output()
+		if err != nil {
+			fmt.Println(err)
+		}
+
+	}
 }
 
 func main() {

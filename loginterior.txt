@@ -1,0 +1,44 @@
+Query: (коврики)|10007446|yes|common||menu_item||interior|subject=1625;2316;1841;2299;3728;4304;331;4024;1760;5229;3073;1835;2106;741;1740;740;1416;2317;930|()
+Result: 
+(коврики)|10007446|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/kitchen4/catalog?subject=4304;2299" "https://wbxcatalog-ru.wildberries.ru/housecraft/catalog?subject=1416" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=2317" "https://wbxcatalog-ru.wildberries.ru/bathroom/catalog?subject=1625;2316" "https://wbxcatalog-ru.wildberries.ru/interior2/catalog?subject=4024" "https://wbxcatalog-ru.wildberries.ru/garden/catalog?subject=1835" "https://wbxcatalog-ru.wildberries.ru/sport2/catalog?subject=740" "https://wbxcatalog-ru.wildberries.ru/bedroom_root/catalog?subject=3073" "https://wbxcatalog-ru.wildberries.ru/children_things/catalog?subject=2106" "https://wbxcatalog-ru.wildberries.ru/autoproduct/catalog?subject=930" "https://wbxcatalog-ru.wildberries.ru/creativity/catalog?subject=1740" "https://wbxcatalog-ru.wildberries.ru/gift2/catalog?subject=331" "https://wbxcatalog-ru.wildberries.ru/bedroom1/catalog?subject=1760;5229" "https://wbxcatalog-ru.wildberries.ru/toys/catalog?subject=741" "https://wbxcatalog-ru.wildberries.ru/kitchen1/catalog?subject=3728;1841"|presets/bucket_17|preset=10007446|()
+
+Query: (детям)|10015897|yes|common||menu_item||interior|subject=28;234;235;254;321;374;1443;1673;3750|(дом)
+Result: 
+(детям)|10015897|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/gift1/catalog?subject=3750;235;374;28;234" "https://wbxcatalog-ru.wildberries.ru/bedroom_root/catalog?subject=1443;1673;321" "https://wbxcatalog-ru.wildberries.ru/moms/catalog?subject=254"|presets/bucket_17|preset=10015897|()
+
+Query: (предметы) (интерьера)|10021892|yes|common||menu_item||interior|subject=27;28;196;198;223;224;234;235;236;260;261;262;263;264;265;270;271;272;273;330;331;335;374;380;433;529;570;625;800;870;880;912;944;967;968;1057;1133;1136;1156;1157;1158;1193;1199;1200;1249;1262;1263;1360;1384;1385;1437;1438;1441;1443;1449;1459;1466;1477;1488;1490;1536;1715;1730;1760;1793;1897;1902;1956;2002;2088;2089;2090;2092;2330;2380;2423;2431;2434;2521;2628;2650;2775;2837;2978;3016;3072;3117;3552;3750;3825;4024;4067;4329;4397;4402;4428;4432;4441;4749;4891;4902;4968;4984;5000;5101;5102;5103;5229|()
+Result: 
+(предметы) (интерьера)|10021892|yes|common||elasticsearch|--query="предметы интерьера" --max-product=15000 --filter="subjectId:(1262 OR 1441 OR 1449 OR 4441 OR 264 OR 335 OR 374 OR 433 OR 5229 OR 1384 OR 1443 OR 1459 OR 2423 OR 5103 OR 880 OR 2090 OR 3117 OR 223 OR 4067 OR 4428 OR 1437 OR 2089 OR 3072 OR 261 OR 800 OR 271 OR 4024 OR 4749 OR 28 OR 870 OR 967 OR 1793 OR 2088 OR 4402 OR 2092 OR 27 OR 570 OR 1477 OR 198 OR 380 OR 1133 OR 4397 OR 1249 OR 968 OR 1158 OR 1466 OR 2978 OR 260 OR 272 OR 2434 OR 4902 OR 1385 OR 1490 OR 1715 OR 1956 OR 235 OR 262 OR 2330 OR 2775 OR 4329 OR 4432 OR 4968 OR 1057 OR 1536 OR 2002 OR 1488 OR 2628 OR 2837 OR 236 OR 1199 OR 1263 OR 1193 OR 1200 OR 2380 OR 2650 OR 529 OR 625 OR 1136 OR 4984 OR 265 OR 270 OR 1897 OR 2431 OR 5000 OR 1157 OR 1360 OR 912 OR 2521 OR 3016 OR 5102 OR 196 OR 263 OR 331 OR 1156 OR 1730 OR 1902 OR 3750 OR 330 OR 944 OR 1760 OR 1438 OR 3825 OR 4891 OR 224 OR 234 OR 273 OR 3552 OR 5101)"|presets/bucket_17|preset=10021892|()
+
+Query: (композиция)|10048312|yes|common||menu_item||interior|subject=1156|()
+Result: (композиция)|10048312|yes|common||menu_item||interior4|subject=1156|()
+
+Query: (бары и фонтаны)|20001531|yes|common||menu_item||interior|subject=1199;1437|()
+Result: 
+(бары и фонтаны)|20001531|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/garden1/catalog?subject=1199" "https://wbxcatalog-ru.wildberries.ru/interior1/catalog?subject=1437"|presets/bucket_17|preset=20001531|()
+
+Query: (радио-часы и будильники)|20001537|yes|common||menu_item||interior|subject=529;1490;1715;1902;2330|()
+Result: (радио-часы и будильники)|20001537|yes|common||menu_item||interior3|subject=529;1490;1715;1902;2330|()
+
+Query: (фрукты, овощи, ягоды)|20001544|yes|common||menu_item||interior|subject=1156&ext=24634;24635;127229|()
+Result: (фрукты, овощи, ягоды)|20001544|yes|common||menu_item||garden1|subject=1156&ext=24634;24635;127229|()
+
+Query: (мох стабилизированный) (для мужчин)|20007174|yes|common||menu_item||interior|subject=4195&kind=1;11|()
+Result: (мох стабилизированный) (для мужчин)|20007174|yes|common||menu_item||garden1|subject=4195&kind=1;11|()
+
+Query: (мох стабилизированный) (для женщин)|20007175|yes|common||menu_item||interior|subject=4195&kind=0;2;11|()
+Result: (мох стабилизированный) (для женщин)|20007175|yes|common||menu_item||garden1|subject=4195&kind=0;2;11|()
+
+Query: (мох стабилизированный) (для детей)|20007176|yes|common||menu_item||interior|subject=4195&kind=3;5;6|()
+Result: (мох стабилизированный) (для детей)|20007176|yes|common||menu_item||garden1|subject=4195&kind=3;5;6|()
+
+Query: (мох стабилизированный) (для девочек)|20007177|yes|common||menu_item||interior|subject=4195&kind=3;5|()
+Result: (мох стабилизированный) (для девочек)|20007177|yes|common||menu_item||garden1|subject=4195&kind=3;5|()
+
+Query: (мох стабилизированный) (для мальчиков)|20007178|yes|common||menu_item||interior|subject=4195&kind=3;6|()
+Result: (мох стабилизированный) (для мальчиков)|20007178|yes|common||menu_item||garden1|subject=4195&kind=3;6|()
+
+Query: (рисунок)||yes|common||||interior|subject=374;968;5866|()
+Result: 
+(рисунок)||yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/gift3/catalog?subject=374" "https://wbxcatalog-ru.wildberries.ru/interior1/catalog?subject=968;5866"|presets/bucket_17|preset=x|()
+

@@ -1,0 +1,328 @@
+Query: (масло) (для волос)||yes|common||||beauty|subject=362|()
+Result: (масло) (для волос)||yes|common||||beauty1|subject=362|()
+
+Query: (косметика)||yes|common||||beauty|subject=49|()
+Result: (косметика)||yes|common||||newyear_things2|subject=49|()
+
+Query: (израильская) (косметика)|10002776|yes|common||menu_item||beauty|brand=2129;2346;4271;5775;5967;7027;7777;13008;15115;16886;20036;25195;25196;27242;27330;28504;39249;44690;49254;9813&subject=344;345;346;347;348;349;350;351;352;353;354;355;357;358;359;360;361;362;363;364;365;366;367;372;377;382;385;403;436;439;447;510;871;950;1264;1526;1566;1570;1668;1672;1927;1929;1949;1957;1963;3356|()
+Result: 
+(израильская) (косметика)|10002776|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=352;1929;354;347;348;355;350;385;353;351" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=3356;1927;1264;1963;1957" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=1949" "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=403;363;362;367;1672;1566;377;436;510;357" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=358" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=382;1526;360;361" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=359;1668;349;372;1570;871;344;950;447;345;346;364;365;366;439"|presets/bucket_17|preset=10002776|()
+
+Query: (волосы)|10005793|yes|common||menu_item||beauty|subject=349;350;352;353;356;357;358;359;360;361;362;363;364;365;366;367;372;377;382;385;403;435;436;447;448;496;510;721;871;950;953;1074;1526;1560;1566;1570;1661;1668;1671;1672;1690;1698;1867;1871;1916;1927;1928;1939;1943;1954;1957;1963;2027;2244;2245;2259;2465;2757;2790;2859;2926;2957;3354;3376;3515;3633;4285;4286;4287;4290;4306;4565;5278|()
+Result: 
+(волосы)|10005793|yes|common||elasticsearch|--query="волосы" --max-product=15000 --filter="subjectId:(2926 OR 4287 OR 4565 OR 435 OR 1954 OR 1963 OR 1672 OR 4286 OR 358 OR 365 OR 1526 OR 4285 OR 4290 OR 1671 OR 1698 OR 2259 OR 2027 OR 2465 OR 3376 OR 510 OR 1560 OR 1661 OR 871 OR 1570 OR 356 OR 359 OR 447 OR 353 OR 496 OR 3354 OR 1916 OR 1943 OR 1957 OR 2244 OR 2859 OR 363 OR 436 OR 1566 OR 1867 OR 3515 OR 4306 OR 350 OR 360 OR 367 OR 2245 OR 352 OR 364 OR 1871 OR 366 OR 377 OR 1668 OR 5278 OR 372 OR 382 OR 1927 OR 2757 OR 403 OR 448 OR 953 OR 1928 OR 721 OR 950 OR 1074 OR 1939 OR 2790 OR 2957 OR 357 OR 361 OR 362 OR 3633 OR 349 OR 385 OR 1690)"|presets/bucket_17|preset=10005793|()
+
+Query: (органическая) (косметика)|10006483|yes|common||menu_item||beauty|brand=4299;4408;4482;4488;5710;5711;5853;5868;5869;6075;6077;6078;6079;6080;6161;7124;8998;9005;9238;9363;9364;9365;9366;9367;9558;9596;10064;10083;10641;10833;11843;12021;12371;12462;12815;12885;13010;13319;13493;13531;13841;13895;14488;15170;16429;16555;16652;18190;18195;18339;19359;20349;20453;20456;20646;20697;24288;24679;24901;25693;25886;26306;26399;27048;27245;27854;29519;29592;29934;31650;33665;35797;36260;36716;39063;39527;41366;41665;44541;44660;46736;47422;48685;49295;52660;56735&subject=344;346;347;348;349;350;351;352;353;354;357;358;359;360;361;362;363;364;365;366;367;370;372;375;377;382;385;403;436;438;439;447;496;871;950;958;959;1074;1076;1248;1264;1526;1566;1570;1624;1661;1672;1690;1916;1921;1923;1926;1927;1928;1929;1942;1949;1954;1963;2036;2244;2245;2259;2626;2786;3151;3356;3505|()
+Result: 
+(органическая) (косметика)|10006483|yes|common||elasticsearch|--query="органическая косметика" --max-product=15000 --filter="subjectId:(385 OR 496 OR 950 OR 1264 OR 2036 OR 370 OR 1566 OR 1928 OR 2786 OR 353 OR 382 OR 1074 OR 1929 OR 1942 OR 3151 OR 1921 OR 2626 OR 346 OR 348 OR 363 OR 375 OR 2259 OR 359 OR 403 OR 1926 OR 1954 OR 3356 OR 1076 OR 1526 OR 1570 OR 1690 OR 360 OR 438 OR 1624 OR 351 OR 357 OR 361 OR 959 OR 347 OR 352 OR 1949 OR 372 OR 1672 OR 1927 OR 958 OR 358 OR 362 OR 364 OR 365 OR 367 OR 436 OR 447 OR 1661 OR 1923 OR 2245 OR 3505 OR 366 OR 439 OR 350 OR 1963 OR 349 OR 871 OR 1916 OR 2244 OR 344 OR 354 OR 377 OR 1248)"|presets/bucket_17|preset=10006483|()
+
+Query: (тканевые) (маски)|10007247|yes|common||menu_item||beauty|subject=1526|()
+Result: (тканевые) (маски)|10007247|yes|common||menu_item||gift3|subject=1526|()
+
+Query: (для ног)|10008896|yes|common||menu_item||beauty|subject=357;359;361;362;372;377;385;403;436;1672;360;363;366;367;382;950;1566;1675;3356|()
+Result: 
+(для ног)|10008896|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=1675;3356" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=360;363;361;382;357;403;367" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=1566;359;950;377;366;372;362;436;1672" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=385"|presets/bucket_17|preset=10008896|()
+
+Query: (для ног)|10008896|yes|common||menu_item||beauty|subject=357;359;361;362;372;377;385;403;436;1672;360;363;366;367;382;950;1566;1675;3356|(обувь)
+Result: 
+(для ног)|10008896|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=372;377;436;360;363;367;362;359;1672;403;382;361;366;1566;950;357" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=385" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=1675;3356"|presets/bucket_17|preset=10008896|()
+
+Query: (ногти)|10009829|yes|common||menu_item||beauty|subject=308;345;350;353;357;359;360;361;362;363;364;365;366;367;372;377;436;437;439;443;448;456;457;721;871;950;961;1245;1411;1412;1526;1566;1570;1611;1624;1672;1674;1690;1867;1937;1940;1941;1942;1943;1944;1945;1946;1947;1949;1954;1957;1963;1964;1988;1989;1990;1991;2134;2135;2259;2306;2307;2326;2332;2333;2358;2794;3018;3355;3581;3621;3632;3944;4079;4525;4526;4556;4557;4558;5009|()
+Result: 
+(ногти)|10009829|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=437;1526;350;353" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=4558;1867;721;1245;2794;1963;3018;1964;308;1412;4557;3632;1957;4079;2333;2332;2358;5009;961;1991;4526;3355;1990;4525;1989;448;3621;3944;1946;1611;1988" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=1937;1674" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=1947;2307;456;2134;1949;2135;1944;2306;1940;1941;2326;443;1942;4556;1945;3581;1943" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=360;367;363;439;357;345;457;871;366;377;364;1672;365;2259;1624;361;372;362;950;1411;1690;436;1570;1566;1954;359"|presets/bucket_17|preset=10009829|()
+
+Query: (пэстис)|10010842|yes|common||menu_item||beauty|subject=497;5132;49|(красота)
+Result: 
+(пэстис)|10010842|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/adult/catalog?subject=5132" "https://wbxcatalog-ru.wildberries.ru/women_underwear2/catalog?subject=497"|presets/bucket_17|preset=10010842|()
+
+Query: (дезинфицирующее) (средство)|10010973|yes|common||content_item||beauty|subject=4986;49|(красота)
+Result: 
+(дезинфицирующее) (средство)|10010973|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=4986"|presets/bucket_17|preset=10010973|()
+
+Query: (магнезия)|10011622|yes|common||menu_item||beauty|subject=2198;49|(красота)
+Result: 
+(магнезия)|10011622|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/sport1/catalog?subject=2198" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49"|presets/bucket_17|preset=10011622|()
+
+Query: (интимная) (косметика)|10012333|yes|common||content_item_substr||beauty|subject=2036;357;362;363;365;367;385;436;871;953;1526;1672;1690;1938;1963|()
+Result: 
+(интимная) (косметика)|10012333|yes|common||elasticsearch|--query="интимная косметика" --max-product=15000 --filter="subjectId:(436 OR 1690 OR 1938 OR 357 OR 363 OR 365 OR 1963 OR 385 OR 1526 OR 1672 OR 362 OR 367 OR 871 OR 2036 OR 953)"|presets/bucket_17|preset=10012333|()
+
+Query: (зеркала)|10012775|yes|common||menu_item||beauty|subject=198;49|(красота)
+Result: 
+(зеркала)|10012775|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/interior3/catalog?subject=198"|presets/bucket_17|preset=10012775|()
+
+Query: (прополис)|10012825|yes|common||menu_item||beauty|subject=3460;49|(красота)
+Result: 
+(прополис)|10012825|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/regional/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3460"|presets/bucket_17|preset=10012825|()
+
+Query: (товары) (для бани)|10013087|yes|common||menu_item||beauty|subject=1847;1848;2093;4790;4791;4792|(красота)
+Result: (товары) (для бани)|10013087|yes|common||menu_item||garden|subject=1847;1848;2093;4790;4791;4792|()
+
+Query: (эмаль)|10013868|yes|common||menu_item||beauty|subject=205;54;299;207;49|(красота)
+Result: 
+(эмаль)|10013868|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/gift2/catalog?subject=205" "https://wbxcatalog-ru.wildberries.ru/jewellery/catalog?subject=54;299;207"|presets/bucket_17|preset=10013868|()
+
+Query: (для лица)|10014968|yes|common||menu_item||beauty|subject=357;359;360;361;362;363;364;365;366;367;372;377;403;436;950;1074;1566;1672;1929;1954;2926;3505;370;382;507;510;871;1526;1570;1963;3356;4775;708;1690;2244;2259;1560;1955;1957|()
+Result: 
+(для лица)|10014968|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=370;1929" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=708;1560;2926;1955;2244" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=3356;4775;3505" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=382;362;365;372;363;357;1566;1526;361;1690;871;950;1672;366;367;360;364;377;1954;403;359;436;507" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=1957;1963;1570;2259" "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=510" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=1074"|presets/bucket_17|preset=10014968|()
+
+Query: (бинты)|10016009|yes|common||content_item_substr||beauty|subject=3245;414;2377;3462;4715;4888;2100;3046|()
+Result: 
+(бинты)|10016009|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/sport4/catalog?subject=3462;4715;4888;414" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=2100" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=3046" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=2377" "https://wbxcatalog-ru.wildberries.ru/zoo/catalog?subject=3245"|presets/bucket_17|preset=10016009|()
+
+Query: (для тела)|10016747|yes|common||menu_item||beauty|subject=357;359;360;361;362;363;364;365;367;372;377;385;403;436;950;1074;1566;1672;1954;3505;366;382;510;871;953;958;959;1076;1570;1963;2036;2259;3356;439;1690;2244;2245;3151;1957|()
+Result: 
+(для тела)|10016747|yes|common||elasticsearch|--query="для тела" --max-product=15000 --filter="subjectId:(385 OR 436 OR 871 OR 1570 OR 3356 OR 3151 OR 360 OR 950 OR 1074 OR 1690 OR 2245 OR 357 OR 361 OR 372 OR 377 OR 1672 OR 959 OR 365 OR 367 OR 1566 OR 953 OR 2244 OR 359 OR 363 OR 403 OR 366 OR 958 OR 1963 OR 362 OR 3505 OR 382 OR 2259 OR 364 OR 510 OR 1954 OR 1076 OR 2036 OR 439 OR 1957)"|presets/bucket_17|preset=10016747|()
+
+Query: (для губ)|10016880|yes|common||menu_item||beauty|subject=357;360;361;362;363;372;377;403;1921;365;1566;1570;1929;3356;359;367|()
+Result: 
+(для губ)|10016880|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=403;377;363" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=367;362;365;372;359;357;361;360;1921;1566" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=1570" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=1929" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=3356"|presets/bucket_17|preset=10016880|()
+
+Query: (пластырь) (для похудения)|10016925|yes|common||content_item||beauty|subject=4866;49|(красота)
+Result: 
+(пластырь) (для похудения)|10016925|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=4866"|presets/bucket_17|preset=10016925|()
+
+Query: (шоколадный) (фонтан)|10017311|yes|common||content_item||beauty|subject=3629;49|(красота)
+Result: 
+(шоколадный) (фонтан)|10017311|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/appliances/catalog?subject=3629" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=49"|presets/bucket_17|preset=10017311|()
+
+Query: (нут)|10017927|yes|common||menu_item||beauty|subject=4220;49|(красота)
+Result: 
+(нут)|10017927|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=4220" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=49"|presets/bucket_17|preset=10017927|()
+
+Query: (бумеранг)|10017959|yes|common||content_item||beauty|subject=4572;49|(красота)
+Result: 
+(бумеранг)|10017959|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/toys/catalog?subject=4572" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=49"|presets/bucket_17|preset=10017959|()
+
+Query: (горчица)|10018941|yes|common||menu_item||beauty|subject=3386;49|(красота)
+Result: 
+(горчица)|10018941|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3386"|presets/bucket_17|preset=10018941|()
+
+Query: (макияж)|10018970|yes|common||menu_item||beauty|subject=348;350;352;353;1624;1927;1928;354;344;346;347;349;351;355;582;1409;1918;2340;2802;308;358;377;403;435;437;499;796;1250;1410;1527;1609;1613;1614;1698;1871;1921;1930;1931;1934;2027;2298;2375;2381;2565;2632;2737;3454;3549;4193;4837;4838|()
+Result: 
+(макияж)|10018970|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=308;1624;403;437" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=435;1931;2027;344;1871;1921;346;2340;349;377;358" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=354;1930;351;1614;350;348;347;1698;352;355;353" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=2381;1609;2737;1410;2298;796;4193;3549;1613;1928;2565;1527;1927;499" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=2802;3454;2375;2632;1934;4837;582;1250;4838;1409;1918"|presets/bucket_17|preset=10018970|()
+
+Query: (для глаз)|10019412|yes|common||menu_item||beauty|subject=357;359;362;364;372;377;403;363;365;366;367;370;510;1566;1570;1929;3356;360;1954|()
+Result: 
+(для глаз)|10019412|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=403;363;367;362;1954;357;510;1566;377" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=360" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=359;365;1570;372;364;366" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=1929;370" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=3356"|presets/bucket_17|preset=10019412|()
+
+Query: (профессиональная) (косметика)|10019528|yes|common||menu_item||beauty|brand=1560;4329;5664;6154;6442;6443;6444;6445;6446;6447;6448;6449;6450;6451;6452;6511;6568;6672;7108;7384;7385;7386;7387;7388;7389;7390;7392;7393;7394;7395;7783;7790;7791;7796;8337;8377;8416;9201;9238;9520;9521;9574;9759;9813;11220;11354;11358;11363;11620;11968;11970;11971;11973;11975;11976;11977;11980;11981;11987;11989;11990;12529;13511;13752;13819;14707;14708;16651;17568;17687;18404;20858;21404;22663;22664;30381;30382;30640;31650;33773;33774;34168;35988;37032;38999;39517;39714;39758;39916;40135;42803;50345;53031;53790;53801;56801&subject=308;341;344;345;346;347;348;349;350;351;352;353;354;355;357;358;359;360;361;362;363;364;365;366;367;370;372;375;377;382;385;403;435;436;437;438;439;443;448;464;499;507;510;556;582;596;721;871;950;1074;1245;1247;1248;1250;1410;1411;1428;1526;1560;1566;1570;1610;1612;1614;1615;1624;1661;1668;1671;1672;1674;1675;1690;1698;1847;1862;1867;1871;1916;1918;1921;1926;1927;1928;1929;1930;1931;1934;1939;1940;1941;1942;1943;1944;1949;1954;1955;1957;1963;2027;2101;2135;2244;2245;2259;2298;2306;2307;2326;2334;2340;2358;2375;2410;2565;2592;2626;2627;2632;2757;2786;2790;2802;2859;2926;2936;3050;3210;3354;3356;3376;3454;3505;3507;3515|()
+Result: 
+(профессиональная) (косметика)|10019528|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=363;382;403;556;3050;377;438;358" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=1921;1930;367;1698;1928;1690;360;1931;507;1916;871;1612;437;385;439;1954;351;2632;344;349;2027;2298;347;366;1926;375;1671;354;372;950;359;1871;350;348;346;2340;582;1250;2802;1927;357;364;355;353;362;2375;361;365;1410;3454;352;1672;1526;1867;1934;1661;1918;436;1624;499;1668;1566;1614;2565" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=1428;1074;3210;3376;1939;3354;435;2936" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=370;1929" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=2859;1560;3507;2626;2245;2592;2926;1247;2101;2627;3505;1248;2244;2334;2410;1955;3356;1675" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=2757;3515;2790" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=448;2326;2307;1963;2135;1941;1570;721;1949;1957;345;1674;2358;1411;1943;1245;308;1942;2259;1944;1940;1615;443;2306" "https://wbxcatalog-ru.wildberries.ru/gift3/catalog?subject=341" "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=510;2786;464;1610;596" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=1862" "https://wbxcatalog-ru.wildberries.ru/garden/catalog?subject=1847"|presets/bucket_17|preset=10019528|()
+
+Query: (ножницы) (для стрижки)|10022864|yes|common||menu_item||beauty|subject=2881;49|(красота)
+Result: 
+(ножницы) (для стрижки)|10022864|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/zoo/catalog?subject=2881" "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49"|presets/bucket_17|preset=10022864|()
+
+Query: (сахарная) (вата)|10023920|yes|common||menu_item||beauty|subject=3395;49|(красота)
+Result: 
+(сахарная) (вата)|10023920|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3395"|presets/bucket_17|preset=10023920|()
+
+Query: (щетки)|10026675|yes|common||menu_item||beauty|subject=556;1612;3492;5055|(красота)
+Result: 
+(щетки)|10026675|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/appliances/catalog?subject=3492;5055" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=1612" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=556"|presets/bucket_17|preset=10026675|()
+
+Query: (антибактериальное) (средство)|10027292|yes|common||content_item||beauty|subject=1948;49|(красота)
+Result: (антибактериальное) (средство)|10027292|yes|common||content_item||beauty2|subject=1948;49|()
+
+Query: (соя)|10027671|yes|common||menu_item||beauty|subject=3417;49|(красота)
+Result: 
+(соя)|10027671|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3417"|presets/bucket_17|preset=10027671|()
+
+Query: (корейские) (бренды)|10029623|yes|common||menu_item||beauty|brand=1043;4249;4250;4450;4451;4452;6142;6143;6313;7476;7796;7920;7921;7970;8589;8590;8613;9127;9336;9337;9520;9521;9523;9758;9759;9762;9788;9789;10012;10014;10015;10019;10020;10021;10024;10085;10095;10523;10822;10863;10865;11055;11056;11158;11163;11164;11166;11167;11168;11172;11173;11391;11417;11824;11825;11826;12061;12431;12507;12553;12554;13365;13434;13435;13580;13581;13582;13585;14223;14328;14792;14902;14904;14937;15030;15031;15836;15906;16414;16839;17069;17345;17567;17652;17653;17654;17655;17656;17657;17660;17665;17947;18153;18163;18166;18303;18668;18672;18770;18771;18924;18962;19023;19214;19302;19303;19423;19585;19642;19734;19818;19889;20031;20046;20320;20505;20693;20939;20940;21246;21320;21597;21598;21617;22015;22216;22538;22539;22543;22937;23556;23668;23790;23916;24475;24491;24633;24957;25402;25683;25779;25832;25919;25948;25950;26057;26103;26407;26425;26543;26681;26703;26788;26790;26793;26819;26820;26822;26852;27053;27131;27162;27196;27285;27710;27826;27963;27968;27969;28034;28143;28145;28147;28403;28436;28466;28936;29425;29607;29990;29994;30614;30855;30857;30858;30861;30916;31033;31270;31945;32518;32737;32841;33394;33395;33398;33518;34109;34111;34649;34917;34958;35024;35416;35698;35755;36637;36734;36884;36926;37122;37195;37993;38527;40648;41665;42098;42101;42102;42103;42420;42708;44419;46896&subject=96;344;345;346;347;348;349;350;351;352;353;354;355;357;358;359;360;361;362;363;364;365;366;367;370;372;375;377;382;385;403;435;436;437;438;440;447;499;500;507;510;556;582;708;871;950;953;958;959;1076;1290;1409;1411;1482;1526;1527;1560;1566;1570;1668;1672;1674;1675;1918;1927;1928;1929;1952;1963;1988;2036;2259;2340;2677;2802;3356;3505;3549;4775|()
+Result: 
+(корейские) (бренды)|10029623|yes|common||elasticsearch|--query="корейские бренды" --max-product=15000 --filter="subjectId:(353 OR 708 OR 871 OR 1290 OR 1411 OR 1527 OR 1988 OR 344 OR 3356 OR 360 OR 363 OR 3549 OR 354 OR 346 OR 357 OR 365 OR 1668 OR 3505 OR 96 OR 372 OR 377 OR 403 OR 435 OR 437 OR 556 OR 582 OR 349 OR 1409 OR 385 OR 438 OR 440 OR 1482 OR 366 OR 500 OR 1560 OR 1952 OR 362 OR 436 OR 1076 OR 1566 OR 1672 OR 1928 OR 2036 OR 2802 OR 382 OR 355 OR 1675 OR 350 OR 1929 OR 2259 OR 347 OR 358 OR 950 OR 2677 OR 348 OR 359 OR 4775 OR 352 OR 370 OR 953 OR 959 OR 1927 OR 361 OR 510 OR 958 OR 1674 OR 375 OR 447 OR 1963 OR 351 OR 364 OR 499 OR 1570 OR 2340 OR 345 OR 507 OR 1526 OR 1918 OR 367)"|presets/bucket_17|preset=10029623|()
+
+Query: (лаки)|10030458|yes|common||menu_item||beauty|subject=345;721;1943;1944;1945;2306;2307;2326;3581|()
+Result: 
+(лаки)|10030458|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=2307;1943;1944;1945;2306;2326;3581" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=345" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=721"|presets/bucket_17|preset=10030458|()
+
+Query: (маски) (тканевые)|10030558|yes|common||menu_item||beauty|subject=1526|()
+Result: (маски) (тканевые)|10030558|yes|common||menu_item||gift4|subject=1526|()
+
+Query: (загуститель)|10030632|yes|common||content_item||beauty|subject=3424;49|(красота)
+Result: 
+(загуститель)|10030632|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3424"|presets/bucket_17|preset=10030632|()
+
+Query: (подруге)|10030773|no|common||menu_item||beauty|subject=308;341;382;403;1489;1624&ext=66852|(красота)
+Result: (подруге)|10030773|no|common||menu_item||gift4|subject=308;341;382;403;1489;1624&ext=66852|()
+
+Query: (для рук)|10034190|yes|common||menu_item||beauty|subject=357;359;360;361;362;365;377;403;436;3505;363;364;366;382;385;871;950;953;1566;1570;1672;1674;372;1954|()
+Result: 
+(для рук)|10034190|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=3505" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=364;1566;372;871;382;361;363;436;403;950;357;1954;385;377;366;1672;365;359;362;360" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=1570;1674" "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=953"|presets/bucket_17|preset=10034190|()
+
+Query: (уход) (за ногтями)|10034239|no|common||menu_item||beauty|subject=350;353;357;359;360;361;362;363;364;365;366;367;372;377;436;439;448;871;950;1526;1566;1570;1672;1674;1690;1867;1937;1938;1940;1941;1942;1949;1954;1957;1963;2259;2307&ext=63622|()
+Result: 
+(уход) (за ногтями)|10034239|no|common||elasticsearch|--query="уход за ногтями" --max-product=15000 --filter="subjectId:(361 OR 372 OR 950 OR 1690 OR 1942 OR 362 OR 366 OR 871 OR 1938 OR 1526 OR 1941 OR 1949 OR 357 OR 377 OR 436 OR 439 OR 353 OR 1570 OR 1672 OR 1867 OR 364 OR 365 OR 448 OR 1937 OR 1940 OR 1954 OR 359 OR 360 OR 367 OR 1674 OR 350 OR 363 OR 1963 OR 1566 OR 1957 OR 2259 OR 2307)"|presets/bucket_17|preset=10034239|()
+
+Query: (любимому)|10035836|yes|common||menu_item||beauty|subject=341;375;403;1527;1992&ext=66594|(красота)
+Result: 
+(любимому)|10035836|yes|common||elasticsearch|--query="любимому" --max-product=15000 --filter="subjectId:(375 OR 403 OR 1527 OR 1992 OR 341)"|presets/bucket_17|preset=10035836|()
+
+Query: (зайцы)|10037763|yes|common||menu_item||beauty|subject=268;49&ext=63042|(красота)
+Result: 
+(зайцы)|10037763|yes|common||elasticsearch|--query="зайцы" --max-product=15000 --filter="subjectId:(268 OR 49)"|presets/bucket_17|preset=10037763|()
+
+Query: (коррекция) (фигуры)|10038498|yes|common||menu_item||beauty|subject=357;359;360;361;362;363;365;366;367;372;377;382;403;436;439;708;871;950;958;959;1074;1566;1672;1757;1848;1867;1957;2100;2101;2244;2259;3507&ext=28350|()
+Result: 
+(коррекция) (фигуры)|10038498|yes|common||elasticsearch|--query="коррекция фигуры" --max-product=15000 --filter="subjectId:(382 OR 403 OR 1848 OR 3507 OR 362 OR 1757 OR 359 OR 958 OR 365 OR 2101 OR 2244 OR 2259 OR 361 OR 372 OR 708 OR 950 OR 1074 OR 1957 OR 2100 OR 360 OR 366 OR 436 OR 959 OR 1566 OR 363 OR 367 OR 377 OR 439 OR 357 OR 1672 OR 1867 OR 871)"|presets/bucket_17|preset=10038498|()
+
+Query: (мужчинам)|10039560|yes|common||menu_item||beauty|subject=341;375;403;1527;1992|(красота)
+Result: 
+(мужчинам)|10039560|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=341;403" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=1992;1527" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=375"|presets/bucket_17|preset=10039560|()
+
+Query: (майонез)|10039688|no|common||content_item||beauty|subject=4564;49|(красота)
+Result: 
+(майонез)|10039688|no|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=4564"|presets/bucket_17|preset=10039688|()
+
+Query: (восточные) (сладости)|10039900|yes|common||menu_item||beauty|subject=3132;3360;3361;3395;3396;3399;3406;3496;3961;4142;4318;49|(красота)
+Result: 
+(восточные) (сладости)|10039900|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3132;3361;3496;3360;3395;3396;3399;3961;4142;4318;3406"|presets/bucket_17|preset=10039900|()
+
+Query: (порошки)|10040474|yes|common||menu_item||beauty|subject=3525;49|(красота)
+Result: 
+(порошки)|10040474|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/housecraft2/catalog?subject=3525"|presets/bucket_17|preset=10040474|()
+
+Query: (клепки)|10041013|yes|common||menu_item||beauty|subject=1734;49|(красота)
+Result: 
+(клепки)|10041013|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/creativity/catalog?subject=1734"|presets/bucket_17|preset=10041013|()
+
+Query: (пахлава)|10041015|yes|common||menu_item||beauty|subject=4318;49|(красота)
+Result: 
+(пахлава)|10041015|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=4318"|presets/bucket_17|preset=10041015|()
+
+Query: (пластыри) (для похудения)|10046003|yes|common||menu_item||beauty|subject=4866;49|(красота)
+Result: 
+(пластыри) (для похудения)|10046003|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=4866"|presets/bucket_17|preset=10046003|()
+
+Query: (против) (растяжек)|10046708|yes|common||menu_item||beauty|subject=357;359;360;361;362;363;365;366;372;377;382;403;439;1074;1526;1560;1690;1957;1963;2259;3151;3356&ext=67735|()
+Result: 
+(против) (растяжек)|10046708|yes|common||elasticsearch|--query="против растяжек" --max-product=15000 --filter="subjectId:(2259 OR 359 OR 360 OR 362 OR 363 OR 403 OR 1560 OR 1690 OR 361 OR 365 OR 382 OR 439 OR 1957 OR 357 OR 377 OR 1963 OR 3151 OR 366 OR 372 OR 1074 OR 1526 OR 3356)"|presets/bucket_17|preset=10046708|()
+
+Query: (ножницы) (по металлу)|10046733|yes|common||menu_item||beauty|subject=2295;49|(красота)
+Result: 
+(ножницы) (по металлу)|10046733|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/repair1/catalog?subject=2295" "https://wbxcatalog-ru.wildberries.ru/regional/catalog?subject=49"|presets/bucket_17|preset=10046733|()
+
+Query: (композиция)|10048312|yes|common||menu_item||beauty|subject=1156;49|(красота)
+Result: 
+(композиция)|10048312|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/interior/catalog?subject=1156" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49"|presets/bucket_17|preset=10048312|()
+
+Query: (уход) (за зубами)|10050061|yes|common||menu_item||beauty|subject=357;362;363;367;377;403;436;438;440;556;596;1311;1566;1610;1613;1672;1862;1954;2259;2494;2786;2787;2826;3066;3067;3628;3721;3914;4928&ext=63623|()
+Result: 
+(уход) (за зубами)|10050061|yes|common||elasticsearch|--query="уход за зубами" --max-product=15000 --filter="subjectId:(1954 OR 3628 OR 363 OR 403 OR 1613 OR 4928 OR 596 OR 1311 OR 1862 OR 362 OR 438 OR 440 OR 377 OR 2826 OR 556 OR 1672 OR 3066 OR 436 OR 2787 OR 2494 OR 2786 OR 1610 OR 2259 OR 3067 OR 3721 OR 3914 OR 357 OR 367 OR 1566)"|presets/bucket_17|preset=10050061|()
+
+Query: (цветочная) (композиция)|10050725|yes|common||content_item||beauty|subject=2521;49|(красота)
+Result: 
+(цветочная) (композиция)|10050725|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/regional/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/interior4/catalog?subject=2521"|presets/bucket_17|preset=10050725|()
+
+Query: (карандаш) (механический)|10055457|yes|common||content_item||beauty|subject=4740;49|(красота)
+Result: 
+(карандаш) (механический)|10055457|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/creativity/catalog?subject=4740"|presets/bucket_17|preset=10055457|()
+
+Query: (окрашивание) (бровей)|10057882|yes|common||menu_item||beauty|subject=358;361;435;1871;2027;5278&ext=63527|()
+Result: 
+(окрашивание) (бровей)|10057882|yes|common||elasticsearch|--query="окрашивание бровей" --max-product=15000 --filter="subjectId:(2027 OR 5278 OR 358 OR 361 OR 435 OR 1871)"|presets/bucket_17|preset=10057882|()
+
+Query: (против) (морщин)|10060290|no|common||menu_item||beauty|subject=357;359;360;361;362;363;364;366;367;372;377;382;403;436;950;1526;1560;1566;1570;1672;1690;1867;1954;1957;2244;2259;2859;2926;3356;3505;4775&ext=18997|()
+Result: 
+(против) (морщин)|10060290|no|common||elasticsearch|--query="против морщин" --max-product=15000 --filter="subjectId:(3356 OR 360 OR 362 OR 366 OR 436 OR 1566 OR 1867 OR 1560 OR 372 OR 1957 OR 357 OR 364 OR 367 OR 403 OR 1526 OR 1570 OR 1954 OR 2926 OR 377 OR 3505 OR 359 OR 361 OR 950 OR 1690 OR 2244 OR 2259 OR 2859 OR 363 OR 382 OR 1672 OR 4775)"|presets/bucket_17|preset=10060290|()
+
+Query: (агроперлит)|10061013|yes|common||menu_item||beauty|subject=1726;49|(красота)
+Result: 
+(агроперлит)|10061013|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/garden1/catalog?subject=1726"|presets/bucket_17|preset=10061013|()
+
+Query: (против) (пигментации)|10066592|no|common||menu_item||beauty|subject=357;359;360;361;362;363;364;365;366;367;372;377;382;403;950;1526;1560;1566;1570;1690;2259;2859;2926;3356;3505;4775&ext=67734|()
+Result: (против) (пигментации)|10066592|no|common||menu_item||beauty6|subject=357;359;360;361;362;363;364;365;366;367;372;377;382;403;950;1526;1560;1566;1570;1690;2259;2859;2926;3356;3505;4775&ext=67734|()
+
+Query: (корректоры)|10069189|yes|common||menu_item||beauty|subject=353;1927;1928;350;835;1676;1677;1678;4112;2077;2078;4177|()
+Result: 
+(корректоры)|10069189|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/appliances/catalog?subject=4177" "https://wbxcatalog-ru.wildberries.ru/sport4/catalog?subject=1676" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=1927;1928" "https://wbxcatalog-ru.wildberries.ru/sport3/catalog?subject=2077" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=1677;4112;2078;1678;835" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=350;353"|presets/bucket_17|preset=10069189|()
+
+Query: (маска) (эротик)|10070429|yes|common||content_item||beauty|subject=5023;49|(красота)
+Result: 
+(маска) (эротик)|10070429|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/adult/catalog?subject=5023"|presets/bucket_17|preset=10070429|()
+
+Query: (кускус)|10070825|yes|common||menu_item||beauty|subject=3977;49|(красота)
+Result: 
+(кускус)|10070825|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/product/catalog?subject=3977" "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49"|presets/bucket_17|preset=10070825|()
+
+Query: (уход)|10082216|yes|common||menu_item_substr||beauty|subject=723|()
+Result: (уход)|10082216|yes|common||menu_item_substr||zoo|subject=723|()
+
+Query: (зеленка)|10085213|yes|common||content_item||beauty|subject=2970;49|(красота)
+Result: 
+(зеленка)|10085213|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=2970"|presets/bucket_17|preset=10085213|()
+
+Query: (для усиления) (загара)|10085953|no|common||menu_item||beauty|subject=357;359;362;363;365;377;436;521;1566&ext=31206|()
+Result: 
+(для усиления) (загара)|10085953|no|common||elasticsearch|--query="для усиления загара" --max-product=15000 --filter="subjectId:(1566 OR 357 OR 359 OR 377 OR 436 OR 521 OR 362 OR 363 OR 365)"|presets/bucket_17|preset=10085953|()
+
+Query: (ванночки)|10086944|yes|common||content_item_substr||beauty|subject=3233;49|(красота)
+Result: 
+(ванночки)|10086944|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/zoo/catalog?subject=3233"|presets/bucket_17|preset=10086944|()
+
+Query: (ванночки)|10086944|yes|common||content_item_substr||beauty|subject=3233;883|(товары для малышей)
+Result: 
+(ванночки)|10086944|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/children_things/catalog?subject=883" "https://wbxcatalog-ru.wildberries.ru/zoo/catalog?subject=3233"|presets/bucket_17|preset=10086944|()
+
+Query: (отбеливатель) (зубов)|10088334|yes|common||content_item||beauty|subject=4052;49|(красота)
+Result: (отбеливатель) (зубов)|10088334|yes|common||content_item||beauty3|subject=4052;49|()
+
+Query: (подводки)|10089298|yes|common||menu_item||beauty|subject=350;351|()
+Result: (подводки)|10089298|yes|common||menu_item||beauty3|subject=350;351|()
+
+Query: (щеточка) (для ногтей)|10094026|yes|common||content_item||beauty|subject=1486;49|(красота)
+Result: 
+(щеточка) (для ногтей)|10094026|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=49" "https://wbxcatalog-ru.wildberries.ru/children_things/catalog?subject=1486"|presets/bucket_17|preset=10094026|()
+
+Query: (уход) (за полостью) (рта)|10096450|yes|common||menu_item||beauty|subject=357;363;367;403;436;438;440;556;362;1954;2259;2786|()
+Result: 
+(уход) (за полостью) (рта)|10096450|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=438;556;1954;2259;357;403;436;362;363;367" "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=2786;440"|presets/bucket_17|preset=10096450|()
+
+Query: (салфетки) (для груди)|10096930|yes|common||menu_item||beauty|subject=1701;49|(красота)
+Result: 
+(салфетки) (для груди)|10096930|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/children_things/catalog?subject=1701" "https://wbxcatalog-ru.wildberries.ru/newyear_things2/catalog?subject=49"|presets/bucket_17|preset=10096930|()
+
+Query: (праймеры)|10097250|yes|common||menu_item||beauty|subject=354;4164;2307;4586|()
+Result: 
+(праймеры)|10097250|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=354;4164" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=2307" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=4586"|presets/bucket_17|preset=10097250|()
+
+Query: (дермокосметика)|20001224|yes|common||menu_item||beauty|brand=5949;7108;7774;7776;7780;7783;7785;7787;7789;7791;7797;7798;10014;11976;13008;14893;15142;19492;21404;27330;28537;29227;32165;33773;38999;39249;39577;39916;41366;41966;55537;56801&subject=348;350;352;353;357;358;359;360;361;362;363;364;365;366;367;372;377;385;403;436;439;447;950;1074;1566;1672;1921;1923;1927;1928;1929;1954;1963;2926;3505|()
+Result: 
+(дермокосметика)|20001224|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=358" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=357;367;360;363;361;403" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=439;1672;364;372;365;359;436;366;1074;362;1566;950;377;1921;447;1954" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=353;1929;385;1923;352;348;350" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=1963;2926;1927;1928;3505"|presets/bucket_17|preset=20001224|()
+
+Query: (аксессуары для солярия)|20001225|yes|common||menu_item||beauty|subject=2820;2821;3967|()
+Result: (аксессуары для солярия)|20001225|yes|common||menu_item||beauty1|subject=2820;2821;3967|()
+
+Query: (парикмахерская техника)|20001230|yes|common||menu_item||beauty|brand=1560;8615;14536;25754;33743&subject=627;633;642;654;1717;2314;3185;4870|()
+Result: (парикмахерская техника)|20001230|yes|common||menu_item||beauty2|brand=1560;8615;14536;25754;33743&subject=627;633;642;654;1717;2314;3185;4870|()
+
+Query: (румяна и бронзеры)|20001246|yes|common||menu_item||beauty|subject=355;1931|()
+Result: 
+(румяна и бронзеры)|20001246|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=1931" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=355"|presets/bucket_17|preset=20001246|()
+
+Query: (бронзанты и автозагар)|20001262|yes|common||menu_item||beauty|subject=521|()
+Result: (бронзанты и автозагар)|20001262|yes|common||menu_item||beauty2|subject=521|()
+
+Query: (красота и уход)|20001724|yes|common||menu_item||beauty|subject=341;352;355;382;403;1250;1624|()
+Result: 
+(красота и уход)|20001724|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=1250" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=403;1624;341;382" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=352;355"|presets/bucket_17|preset=20001724|()
+
+Query: (тканевые маски и патчи)|20005550|yes|common||menu_item||beauty|subject=1526|()
+Result: (тканевые маски и патчи)|20005550|yes|common||menu_item||gift4|subject=1526|()
+
+Query: (для депиляции и эпиляции)|20005557|yes|common||menu_item||beauty|subject=357;359;361;362;363;365;366;436;1566;375;1290;1527;1248;1690;2626;448;496;2627|()
+Result: 
+(для депиляции и эпиляции)|20005557|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/gift2/catalog?subject=1527;375;363" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=357;361" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=496;359;366;365;436;1690;362;1566" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=1290;448" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=2626;1248;2627"|presets/bucket_17|preset=20005557|()
+
+Query: (для мам и малышей)|20005561|yes|common||menu_item||beauty|subject=357;358;359;362;363;365;367;377;403;438;1566;1672;308;360;364;366;382;436;447;496;500;556;708;871;909;953;958;959;975;1076;1411;1610;1675;1690;1701;2259;2786;3050;3151;345|()
+Result: 
+(для мам и малышей)|20005561|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty3/catalog?subject=500;1672;360;364;1566;359;377;363;366;403;959;447;358;958;362;367;365;382;1690;436;871;357" "https://wbxcatalog-ru.wildberries.ru/beauty4/catalog?subject=2259;1411;345;308" "https://wbxcatalog-ru.wildberries.ru/beauty5/catalog?subject=556;438;953;1610;1076;909;975;2786" "https://wbxcatalog-ru.wildberries.ru/shealth/catalog?subject=3050" "https://wbxcatalog-ru.wildberries.ru/children_things/catalog?subject=1701" "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=496;3151" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=708" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=1675"|presets/bucket_17|preset=20005561|()
+
+Query: (мужская линия)|20005565|yes|common||menu_item||beauty|subject=357;358;359;366;367;372;377;382;385;403;436;1923;360;361;362;363;364;365;375;447;871;950;1290;1526;1527;1566;1668;96;341;352;356;439;444;500;507;958;959;1264;1661;1671;1672;1690;1867;1916;1926;1952;1954;1965;1992;3305;3633;4090|()
+Result: 
+(мужская линия)|20005565|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/beauty2/catalog?subject=1668;959;439;950;1566;366;362;871;1690;436;359;364;447;500;377;372;1954;1672;958;365;358;1671" "https://wbxcatalog-ru.wildberries.ru/premium/catalog?subject=96;356;385;352;1923;1952;444;1926" "https://wbxcatalog-ru.wildberries.ru/beauty6/catalog?subject=507;1264;1527;1290;375;1867" "https://wbxcatalog-ru.wildberries.ru/beauty1/catalog?subject=4090;1992;3633;1916;1661;1965;3305" "https://wbxcatalog-ru.wildberries.ru/gift4/catalog?subject=357;367;1526;361;403;360;341;363;382"|presets/bucket_17|preset=20005565|()
+
+Query: (сыворотка) (revitalift)||yes|common||||beauty|brand=4278&subject=372|()
+Result: (сыворотка) (revitalift)||yes|common||||beauty6|brand=4278&subject=372|()
+

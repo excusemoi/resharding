@@ -1,0 +1,153 @@
+Query: (очки)|10000079|yes|common||menu_item||repair|subject=2953;3679;3907|(строительные инструменты)
+Result: 
+(очки)|10000079|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/work_clothes/catalog?subject=3679" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=2953;3907"|presets/bucket_17|preset=10000079|()
+
+Query: (жалюзи)|10000732|yes|common||menu_item||repair|subject=1619;1162|(строительные инструменты)
+Result: (жалюзи)|10000732|yes|common||menu_item||livingroom|subject=1619;1162|()
+
+Query: (инструменты)|10004119|yes|common||content_item_substr||repair|subject=559;655;926;1481;1961;2031;2032;2033;2052;2054;2055;2056;2057;2058;2059;2060;2061;2062;2063;2064;2065;2066;2067;2068;2069;2071;2073;2083;2084;2181;2182;2183;2191;2288;2293;2294;2295;2296;2373;2382;2383;2384;2385;2386;2387;2388;2389;2447;2448;2449;2450;2451;2706;2715;2798;2953;2954;3011;3054;3140;3141;3142;3166;3514;3516;3527;3665;3667;3668;3673;3679;3830;3831;3832;3833;3834;3907;3930;3931;3942;3968;3969;3994;4007;4008;4009;4010;4017;4068;4099;4100;4104;4110;4169;4171;4172;4240;4250;4262;4265;4275;4294;4295;4296;4297;4305;4490;4682;4690;4701;4807;4810;4817;4876;5166;5167;5173;5176;5178|() (строительные инструменты)
+Result: 
+(инструменты)|10004119|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/creativity/catalog?subject=2191" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=3142;2382;2063;2068;3969;2449;2451;2706;2954;1961;2055;2031;4296;2059;2385;4876;2066;2384;4009;4110;2388;2182;2448;4295;2057;2386;3527;2064;3968;4294;3931;4099;3673;3668;3907;3141;2798;2181;3831;4068;4008;2060;4017;2067;2052;2071;3930;3140;2294;3665;4171;4172;5173;2065;2183;2073;4297;2389;2058;3834;3166;3942;3994;2387;4305;2296;2288;4807;3011;3830;3514;3516;2450;4275;4250;5167;4490;2084;3667;3833;2383;2056;1481;3054;2373;2069;4100;2062;2293;2083;2953;2447;4007;2715;4010;5166;2033;3832;2054;4240;4169;2032;2295;2061" "https://wbxcatalog-ru.wildberries.ru/repair1/catalog?subject=4682" "https://wbxcatalog-ru.wildberries.ru/autoproduct/catalog?subject=926;4701;4690" "https://wbxcatalog-ru.wildberries.ru/gift2/catalog?subject=655;559" "https://wbxcatalog-ru.wildberries.ru/repair3/catalog?subject=4104;4810;5178;5176;4817" "https://wbxcatalog-ru.wildberries.ru/work_clothes/catalog?subject=4265;4262;3679"|presets/bucket_17|preset=10004119|()
+
+Query: (сантехника)|10006923|yes|common||menu_item||repair|subject=1016;1452;1485;1497;1699;1700;1702;1703;1704;1705;1708;1709;1712;2220;2549;3064;3144;3160;3319;3827;3991;3992;4057;4073;4074;4309;4310;4333;4385;4386;4387;4447;4475;4489;4579;4597;4655;4656;4678;4915;4960;5149;5169;5170;5171|()
+Result: 
+(сантехника)|10006923|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=3064;4057;3160" "https://wbxcatalog-ru.wildberries.ru/appliances/catalog?subject=4447;2549;1497" "https://wbxcatalog-ru.wildberries.ru/garden1/catalog?subject=3827" "https://wbxcatalog-ru.wildberries.ru/bathroom/catalog?subject=1016;4678;1700;5171;1704;1703;4333;5170;4655;3144;4073;1708;1705;1709;4475;3319;1712;2220;4074;4489;1702;4385;5169;4386;3991;4656;4309;4579;1452;4310;1699;4960;5149;4387;1485;4597;4915" "https://wbxcatalog-ru.wildberries.ru/repair3/catalog?subject=3992"|presets/bucket_17|preset=10006923|()
+
+Query: (заглушки) (для розеток)|10007629|yes|common||menu_item||repair|subject=1468|() (строительные инструменты)
+Result: (заглушки) (для розеток)|10007629|yes|common||menu_item||children_room1|subject=1468|()
+
+Query: (поролон)||yes|common||||repair|subject=7405|()
+Result: (поролон)||yes|common||||repair3|subject=7405|()
+
+Query: (фотообои) (со скидкой)||yes|common||||repair|subject=2261|()
+Result: (фотообои) (со скидкой)||yes|common||||repair1|subject=2261|()
+
+Query: (спот)|10013381|yes|common||content_item||repair|subject=1263;1162|(строительные инструменты)
+Result: (спот)|10013381|yes|common||content_item||housecraft|subject=1263;1162|()
+
+Query: (стабилизатор)|10013568|yes|common||content_item||repair|subject=3061;1162|(строительные инструменты)
+Result: (стабилизатор)|10013568|yes|common||content_item||electronic6|subject=3061;1162|()
+
+Query: (колеса)|10015494|yes|common||content_item_substr||repair|subject=1179;4392;2050|(строительные материалы)
+Result: 
+(колеса)|10015494|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=2050" "https://wbxcatalog-ru.wildberries.ru/sport1/catalog?subject=1179;4392"|presets/bucket_17|preset=10015494|()
+
+Query: (разветвитель)|10018636|yes|common||content_item||repair|subject=794;1162|(строительные инструменты)
+Result: (разветвитель)|10018636|yes|common||content_item||electronic1|subject=794;1162|()
+
+Query: (плоскогубцы)||yes|common||||repair|subject=2062;2068;2495;3666|()
+Result: 
+(плоскогубцы)||yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/sport2/catalog?subject=2495" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=2068;3666;2062"|presets/bucket_17|preset=x|()
+
+Query: (разветвители)|10024333|yes|common||menu_item||repair|subject=794;1162|(строительные инструменты)
+Result: (разветвители)|10024333|yes|common||menu_item||electronic6|subject=794;1162|()
+
+Query: (запчасти)|10028014|yes|common||content_item_substr||repair|subject=3942|(строительные инструменты)
+Result: (запчасти)|10028014|yes|common||content_item_substr||business|subject=3942|()
+
+Query: (мате)|10029639|no|common||menu_item||repair|subject=406;1162&ext=123996|(строительные инструменты)
+Result: (мате)|10029639|no|common||menu_item||gift1|subject=406;1162&ext=123996|()
+
+Query: (саморезы)|10040735|no|common||menu_item||repair|subject=4103|()
+Result: (саморезы)|10040735|no|common||menu_item||business|subject=4103|()
+
+Query: (ремкомплекты)|10048836|yes|common||content_item_substr||repair|subject=1315;2050|(строительные материалы)
+Result: 
+(ремкомплекты)|10048836|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=2050" "https://wbxcatalog-ru.wildberries.ru/sport1/catalog?subject=1315"|presets/bucket_17|preset=10048836|()
+
+Query: (обои) (для стен)|10050469|yes|common||||repair|subject=2261;5030;5034;6203;7163;7164;7165;7166;7167|()
+Result: (обои) (для стен)|10050469|yes|common||||repair1|subject=2261;5030;5034;6203;7163;7164;7165;7166;7167|()
+
+Query: (обои)|10050469|yes|common||||repair|subject=2261;5030;5034;6203;7163;7164;7165;7166;7167|()
+Result: (обои)|10050469|yes|common||||repair1|subject=2261;5030;5034;6203;7163;7164;7165;7166;7167|()
+
+Query: (биты)|10053478|yes|common||content_item_substr||repair|subject=535;1162|(строительные инструменты)
+Result: (биты)|10053478|yes|common||content_item_substr||sport3|subject=535;1162|()
+
+Query: (шлифовальные)|10056170|yes|common||menu_item||repair|subject=1168|()
+Result: (шлифовальные)|10056170|yes|common||menu_item||business|subject=1168|()
+
+Query: (лестницы)|10064695|yes|common||content_item_substr||repair|subject=3236;1577;2083;2084|()
+Result: 
+(лестницы)|10064695|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/sport1/catalog?subject=1577" "https://wbxcatalog-ru.wildberries.ru/zoo/catalog?subject=3236" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=2083;2084"|presets/bucket_17|preset=10064695|()
+
+Query: (цепь) (для пилы)|10092493|yes|common||content_item||repair|subject=4008|()
+Result: (цепь) (для пилы)|10092493|yes|common||content_item||business|subject=4008|()
+
+Query: (дрели, шуруповерты, гайковерты)|20001469|yes|common||menu_item||repair|subject=1164;2197;2297;3748;4460|()
+Result: 
+(дрели, шуруповерты, гайковерты)|20001469|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=1164;2197;2297;3748" "https://wbxcatalog-ru.wildberries.ru/repair1/catalog?subject=4460"|presets/bucket_17|preset=20001469|()
+
+Query: (гайковёрты)|20001471|yes|common||menu_item||repair|subject=3748|()
+Result: (гайковёрты)|20001471|yes|common||menu_item||business|subject=3748|()
+
+Query: (паяльные инструменты)|20001473|yes|common||menu_item||repair|subject=2054;3514;3516;3527;4682|()
+Result: 
+(паяльные инструменты)|20001473|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=3514;3516;3527;2054" "https://wbxcatalog-ru.wildberries.ru/repair1/catalog?subject=4682"|presets/bucket_17|preset=20001473|()
+
+Query: (перфораторы и отбойные молотки)|20001474|yes|common||menu_item||repair|subject=1166;3717|()
+Result: (перфораторы и отбойные молотки)|20001474|yes|common||menu_item||repair1|subject=1166;3717|()
+
+Query: (шлифмашинки)|20001478|yes|common||menu_item||repair|subject=1168;2540;2668|()
+Result: (шлифмашинки)|20001478|yes|common||menu_item||business|subject=1168;2540;2668|()
+
+Query: (сварочное оборудование)|20001486|yes|common||menu_item||repair|subject=1318;1569;2441;2981;3080;3803;4005;4264;4485;5151|()
+Result: 
+(сварочное оборудование)|20001486|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/work_clothes/catalog?subject=2441;4264" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=1318;4485;4005;5151;1569;2981;3080;3803"|presets/bucket_17|preset=20001486|()
+
+Query: (газосварочное оборудование)|20001487|yes|common||menu_item||repair|subject=2981;3080|()
+Result: (газосварочное оборудование)|20001487|yes|common||menu_item||repair1|subject=2981;3080|()
+
+Query: (лестницы и стремянки)|20001492|yes|common||menu_item||repair|subject=2083;2084|()
+Result: (лестницы и стремянки)|20001492|yes|common||menu_item||business|subject=2083;2084|()
+
+Query: (аксессуары для нивелиров)|20001497|yes|common||menu_item||repair|subject=2954;3011|()
+Result: (аксессуары для нивелиров)|20001497|yes|common||menu_item||business|subject=2954;3011|()
+
+Query: (степлеры строительные)|20001499|yes|common||menu_item||repair|subject=2052;3968|()
+Result: (степлеры строительные)|20001499|yes|common||menu_item||business|subject=2052;3968|()
+
+Query: (вентиляторы и рекуператоры)|20001505|yes|common||menu_item||repair|subject=4057;4915|()
+Result: 
+(вентиляторы и рекуператоры)|20001505|yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/bathroom/catalog?subject=4915" "https://wbxcatalog-ru.wildberries.ru/business/catalog?subject=4057"|presets/bucket_17|preset=20001505|()
+
+Query: (промышленный альпинизм)|20001507|yes|common||menu_item||repair|subject=4969;4970;4971|()
+Result: (промышленный альпинизм)|20001507|yes|common||menu_item||sport4|subject=4969;4970;4971|()
+
+Query: (сетевые)|20006428|yes|common||menu_item||repair|subject=2197|()
+Result: (сетевые)|20006428|yes|common||menu_item||business|subject=2197|()
+
+Query: (ленточные)|20006466|yes|common||menu_item||repair|subject=1169;1168|()
+Result: (ленточные)|20006466|yes|common||menu_item||business|subject=1169;1168|()
+
+Query: (отрезные)|20006467|yes|common||menu_item||repair|subject=1169|()
+Result: (отрезные)|20006467|yes|common||menu_item||repair1|subject=1169|()
+
+Query: (рентоватор)|20006469|yes|common||content_item||repair|subject=2955|()
+Result: (рентоватор)|20006469|yes|common||content_item||repair1|subject=2955|()
+
+Query: (полировальные)|20006475|yes|common||menu_item||repair|subject=1168;2668|()
+Result: (полировальные)|20006475|yes|common||menu_item||repair1|subject=1168;2668|()
+
+Query: (пневмоинструменты)|20006483|yes|common||menu_item||repair|subject=3584;4084;4110;4201;4202;4203;4204;4205;4206;4211;4503|()
+Result: (пневмоинструменты)|20006483|yes|common||menu_item||repair1|subject=3584;4084;4110;4201;4202;4203;4204;4205;4206;4211;4503|()
+
+Query: (подкладки)|20006668|yes|common||menu_item||repair|subject=972|()
+Result: (подкладки)|20006668|yes|common||menu_item||livingroom|subject=972|()
+
+Query: (арт фотообои)||yes|common||||repair|subject=2261|()
+Result: (арт фотообои)||yes|common||||repair1|subject=2261|()
+
+Query: (обои фотообои)||yes|common||||repair|subject=2261|()
+Result: (обои фотообои)||yes|common||||repair1|subject=2261|()
+
+Query: (формочки)||yes|common||||repair|subject=5013;5299|()
+Result: 
+(формочки)||yes|common||catalog|--one-by-one-join "https://wbxcatalog-ru.wildberries.ru/repair3/catalog?subject=5299" "https://wbxcatalog-ru.wildberries.ru/repair1/catalog?subject=5013"|presets/bucket_17|preset=x|()
+
+Query: (стеновые панели)|10136948|yes|common||||repair|subject=7084;7116|()
+Result: (стеновые панели)|10136948|yes|common||||repair1|subject=7084;7116|()
+
+Query: (фотообои)||yes|common||||repair|subject=2261|()
+Result: (фотообои)||yes|common||||repair1|subject=2261|()
+
