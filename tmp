@@ -1,8 +1,0 @@
-[]subject
-type subject struct {
-    []shard
-}
-type shard struct {
-    name string
-    status string
-}
